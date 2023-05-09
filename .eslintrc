@@ -1,0 +1,85 @@
+{
+  "extends": [
+    "airbnb",
+    "airbnb-typescript",
+    "plugin:styled-components-a11y/recommended"
+  ],
+  "plugins": [
+    "react",
+    "@typescript-eslint",
+    "styled-components-a11y",
+    "simple-import-sort",
+    "sort-keys-fix"
+  ],
+  "parserOptions": {
+    "project": "./tsconfig.json"
+  },
+  "settings": {
+    "react": {
+      "version": "detect"
+    }
+  },
+  "globals": {
+    "document": true,
+    "window": true
+  },
+  "ignorePatterns": [
+    "./node_modules"
+  ],
+  "rules": {
+    "strict": 0,
+    "comma-dangle": ["error", "always-multiline"],
+    "function-paren-newline": 0,
+    "lines-between-class-members": 0,
+    "guard-for-in": 0,
+    "max-len": 0,
+    "linebreak-style": 0,
+    "semi": ["error", "never"],
+    "@typescript-eslint/semi": 0,
+    "no-nested-ternary": 0,
+    "no-unused-expressions": 0,
+    "no-underscore-dangle": 0,
+    "no-shadow": 0,
+    "object-curly-newline": 0,
+    "global-require": 0,
+    "no-console": ["error"],
+    "new-cap": 0,
+    "class-methods-use-this": 0,
+    "react/jsx-filename-extension": 0,
+    "react/prefer-stateless-function": 0,
+    "react/prop-types": 0,
+    "react/forbid-prop-types": 0,
+    "react/button-has-type": 0,
+    "jsx-a11y/label-has-for": 0,
+    "jsx-a11y/anchor-is-valid": 0,
+    "import/prefer-default-export": 0,
+    "import/no-extraneous-dependencies": 0,
+    "import/imports-first": 0,
+    "jsx-a11y/no-noninteractive-element-interactions": 0,
+    "jsx-a11y/click-events-have-key-events": 0,
+    "react/no-multi-comp": 0,
+    "consistent-return": 0,
+    "react/jsx-no-undef": [2, { "allowGlobals": true }],
+    "react/destructuring-assignment": 0,
+    "react/react-in-jsx-scope": "off",
+    "react/no-unknown-property": 0,
+    "jsx-a11y/label-has-associated-control": 0,
+    "react/sort-comp": 0,
+    "arrow-body-style": "off",
+    "simple-import-sort/exports": "error",
+    "import/first": "error",
+    "import/newline-after-import": "error",
+    "sort-keys-fix/sort-keys-fix": "error",
+    "sort-keys": ["error", "asc", {"caseSensitive": true, "natural": false, "minKeys": 2}],
+    "import/no-duplicates": "error",
+    "simple-import-sort/imports": ["error", {
+      "groups": [
+        ["^react$"],
+        ["^@react"],
+        ["^[^.@]"],
+        ["^[@]"],
+        ["^[.]"]
+      ]
+    }]
+  }
+}
