@@ -1,7 +1,7 @@
 {
   "compilerOptions": {
     "esModuleInterop": true,
-    "jsx": "react",
+    "jsx": "react-jsx",
     "moduleResolution": "node",
     "lib": [
       "dom",
@@ -10,6 +10,7 @@
     "sourceMap": true,
     "paths": {
       "@app/*": ["./src/*"],
+      "@store/*": ["./src/store/*"],
       "@ui/*": ["./src/ui/*"],
       "@locale": ["./src/locale/strings.ts"]
     }

@@ -2,6 +2,9 @@ const HtmlWebpackPlugin = require('html-webpack-plugin')
 const path = require('path')
 
 module.exports = {
+  devServer: {
+    historyApiFallback: true,
+  },
   devtool: 'source-map',
   entry: path.resolve(__dirname, './src/index.tsx'),
   mode: process.env.NODE_ENV || 'development',

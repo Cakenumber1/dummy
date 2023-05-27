@@ -59,7 +59,12 @@
     "jsx-a11y/click-events-have-key-events": 0,
     "react/no-multi-comp": 0,
     "consistent-return": 0,
-    "react/jsx-no-undef": [2, { "allowGlobals": true }],
+    "react/jsx-no-undef": [
+      2,
+      {
+        "allowGlobals": true
+      }
+    ],
     "react/destructuring-assignment": 0,
     "react/react-in-jsx-scope": "off",
     "react/no-unknown-property": 0,
@@ -68,9 +73,24 @@
     "arrow-body-style": "off",
     "simple-import-sort/exports": "error",
     "import/first": "error",
+    "react/function-component-definition": [
+      2,
+      {
+        "namedComponents": "arrow-function",
+        "unnamedComponents": "arrow-function"
+      }
+    ],
     "import/newline-after-import": "error",
     "sort-keys-fix/sort-keys-fix": "error",
-    "sort-keys": ["error", "asc", {"caseSensitive": true, "natural": false, "minKeys": 2}],
+    "sort-keys": [
+      "error",
+      "asc",
+      {
+        "caseSensitive": true,
+        "natural": false,
+        "minKeys": 2
+      }
+    ],
     "import/no-duplicates": "error",
     "simple-import-sort/imports": ["error", {
       "groups": [
